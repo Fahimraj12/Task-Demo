@@ -16,39 +16,39 @@ A modern, responsive task management application built with React and Tailwind C
 
 ## 📁 Project Structure
 
-task-project/
-│
-├── node_modules/                # Installed dependencies
-├── public/                      # Public assets (favicon, index.html, etc.)
-│
-├── src/                         # Source code
-│   ├── assets/                  # Images, icons, and static files
-│   │   └── react.svg
-│   │
-│   ├── Components/              # Reusable React components
-│   │   ├── Cart.jsx
-│   │   ├── FoodCard.jsx         # (Assumed from visible naming pattern)
-│   │   ├── Filters.jsx
-│   │   ├── MenuItem.jsx
-│   │   └── RestaurantCard.jsx
-│   │
-│   ├── pages/                   # Page components (main routes)
-│   │   └── Home.jsx
-│   │
-│   ├── App.css                  # Global styling
-│   ├── App.jsx                  # Root React component
-│   ├── index.css                # Global CSS styles
-│   ├── main.jsx                 # Entry point rendering <App />
-│
-├── .eslintrc.cjs                # ESLint configuration
-├── .gitignore                   # Files ignored by Git
-├── index.html                   # HTML template
-├── package.json                 # Project metadata & dependencies
-├── postcss.config.js            # PostCSS configuration
-├── README.md                    # Project documentation
-├── tailwind.config.js           # Tailwind CSS configuration
-├── vite.config.js               # Vite build configuration
-└── package-lock.json            # Dependency lock file
+##### task-project/
+##### │
+##### ├── node_modules/                # Installed dependencies
+##### ├── public/                      # Public assets (favicon, index.html, etc.)
+##### │
+##### ├── src/                         # Source code
+##### │   ├── assets/                  # Images, icons, and static files
+##### │   │   └── react.svg
+##### │   │
+##### │   ├── Components/              # Reusable React components
+##### │   │   ├── Cart.jsx
+##### │   │   ├── FoodCard.jsx         # (Assumed from visible naming pattern)
+##### │   │   ├── Filters.jsx
+##### │   │   ├── MenuItem.jsx
+##### │   │   └── RestaurantCard.jsx
+##### │   │
+##### │   ├── pages/                   # Page components (main routes)
+##### │   │   └── Home.jsx
+##### │   │
+##### │   ├── App.css                  # Global styling
+##### │   ├── App.jsx                  # Root React component
+##### │   ├── index.css                # Global CSS styles
+##### │   ├── main.jsx                 # Entry point rendering <App />
+##### │
+##### ├── .eslintrc.cjs                # ESLint configuration
+##### ├── .gitignore                   # Files ignored by Git
+##### ├── index.html                   # HTML template
+##### ├── package.json                 # Project metadata & dependencies
+##### ├── postcss.config.js            # PostCSS configuration
+##### ├── README.md                    # Project documentation
+##### ├── tailwind.config.js           # Tailwind CSS configuration
+##### ├── vite.config.js               # Vite build configuration
+##### └── package-lock.json            # Dependency lock file
 
 
 ## 🚀 Getting Started
