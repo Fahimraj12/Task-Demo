@@ -1,4 +1,4 @@
-# ✅ React Task 
+# React Task 
 
 A modern, responsive task management application built with React and Tailwind CSS. Organize your daily tasks with an intuitive and beautiful interface.
 
