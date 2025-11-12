@@ -1,86 +1,98 @@
-# React Task 
+# React API Data Fetch & UI Replication Task
+### Project Overview
 
-A modern, responsive task management application built with React and Tailwind CSS. Organize your daily tasks with an intuitive and beautiful interface.
+This project is a React-based web application built as part of a company assignment.
+The objective is to fetch data from a provided API endpoint and replicate a given reference UI layout using React and Tailwind CSS (or any other modern styling approach).
 
-## 🛠️ Tech Stack
+### Task Requirements
 
-### Frontend
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Icons** - Beautiful icons
+- Fetch and parse data from the provided API endpoint.
 
-### State Management
-- **React Hooks** (useState, useEffect)
-- **Context API** (if implemented)
+- Display the fetched data by replicating the layout and design from the given reference UI.
 
-## 📁 Project Structure
+- Maintain a clean, modular folder structure with reusable components.
 
-##### task-project/
-##### │
-##### ├── node_modules/                # Installed dependencies
-##### ├── public/                      # Public assets (favicon, index.html, etc.)
-##### │
-##### ├── src/                         # Source code
-##### │   ├── assets/                  # Images, icons, and static files
-##### │   │   └── react.svg
-##### │   │
-##### │   ├── Components/              # Reusable React components
-##### │   │   ├── Cart.jsx
-##### │   │   ├── FoodCard.jsx         # (Assumed from visible naming pattern)
-##### │   │   ├── Filters.jsx
-##### │   │   ├── MenuItem.jsx
-##### │   │   └── RestaurantCard.jsx
-##### │   │
-##### │   ├── pages/                   # Page components (main routes)
-##### │   │   └── Home.jsx
-##### │   │
-##### │   ├── App.css                  # Global styling
-##### │   ├── App.jsx                  # Root React component
-##### │   ├── index.css                # Global CSS styles
-##### │   ├── main.jsx                 # Entry point rendering <App />
-##### │
-##### ├── .eslintrc.cjs                # ESLint configuration
-##### ├── .gitignore                   # Files ignored by Git
-##### ├── index.html                   # HTML template
-##### ├── package.json                 # Project metadata & dependencies
-##### ├── postcss.config.js            # PostCSS configuration
-##### ├── README.md                    # Project documentation
-##### ├── tailwind.config.js           # Tailwind CSS configuration
-##### ├── vite.config.js               # Vite build configuration
-##### └── package-lock.json            # Dependency lock file
+- Ensure the page is responsive and visually matches the provided design.
 
+🧩 Tech Stack
 
-## 🚀 Getting Started
+- React (Vite) – Frontend framework
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+-Tailwind CSS – Styling and responsiveness
 
-### Installation
+- Fetch / Axios – API data fetching
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Fahimraj12/Task-Demo.git
-   cd Task-Demo
-2. Install dependencies
-   ```bash
-   npm install
+- JavaScript (ES6+) – Logic and interactivity
 
-3. Start the development server
-   ```bash
-   npm run dev
-- Open your browser
-- Navigate to http://localhost:5173
+📁 Folder Structure
+   ```
+task-project/
+│
+├── public/                      # Static assets
+├── src/
+│   ├── assets/                  # Images, icons, etc.
+│   ├── Components/              # Reusable components
+│   │   ├── Cart.jsx
+│   │   ├── Filters.jsx
+│   │   ├── MenuItem.jsx
+│   │   └── RestaurantCard.jsx
+│   ├── pages/                   # Page-level components
+│   │   └── Home.jsx
+│   ├── App.jsx                  # Root component
+│   ├── main.jsx                 # Entry point
+│   ├── App.css                  # Global CSS
+│   ├── index.css                # Tailwind setup
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+```
+git clone https://github.com/Fahimraj12/Task-Demo.git
+cd Task-Demo
+```
+2️⃣ Install Dependencies
+```
+npm install
+```
+3️⃣ Run the Development Server
+```
+npm run dev
+```
 
-#### Available Scripts
+- Now open http://localhost:5173/ in your browser.
 
-- npm run dev          # Start development server
-- npm run build        # Build for production
-- npm run preview      # Preview production build
-- npm run lint         # Run ESLint
+🌐 API Integration
 
+- Endpoint: <insert provided API endpoint here>
 
+- Fetch the data using:
+```
+useEffect(() => {
+  fetch("<API_URL>")
+    .then(res => res.json())
+    .then(data => setData(data))
+    .catch(err => console.error("Error fetching data:", err));
+}, []);
+```
+
+- Render the fetched results dynamically using reusable components.
+
+### Components Overview
+-Component	Description
+```
+RestaurantCard.jsx	Displays restaurant name, image, rating, cuisine, and location
+MenuItem.jsx	Renders individual food items from API data
+Filters.jsx	Handles filtering or sorting logic
+Cart.jsx	Manages cart items (if applicable)
+Home.jsx	Main page displaying fetched data and UI layout
+```
 ### 👨‍💻 Author
 - [Mo Fahim Raj](https://www.linkedin.com/in/mo-fahim-raj-175b9b304/)
 - 📧 [mofahimraj@gmail.com]
