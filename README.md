@@ -14,6 +14,9 @@ The objective is to fetch data from a provided API endpoint and replicate a give
 
 - Ensure the page is responsive and visually matches the provided design.
 
+### View Demo
+- https://timely-taiyaki-92115f.netlify.app/
+
 🧩 Tech Stack
 
 - React (Vite) – Frontend framework
