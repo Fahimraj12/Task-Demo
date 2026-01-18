@@ -96,3 +96,7 @@ Home.jsx	Main page displaying fetched data and UI layout
 - [Mo Fahim Raj](https://www.linkedin.com/in/mo-fahim-raj-175b9b304/)
 - 📧 [mofahimraj@gmail.com]
 - 🔗 [GitHub Profile](https://github.com/Fahimraj12)
+
+## Second Update
+Second PR for Pull Shark achievement
+
