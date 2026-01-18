@@ -1,5 +1,6 @@
 # React API Data Fetch & UI Replication Task
 
+=======
 ### Project Overview
 
 This project is a React-based web application built as part of a company assignment.
@@ -16,7 +17,6 @@ The objective is to fetch data from a provided API endpoint and replicate a give
 - Ensure the page is responsive and visually matches the provided design.
 
 ### View Demo
-
 - https://timely-taiyaki-92115f.netlify.app/
 
 🧩 Tech Stack
@@ -31,7 +31,6 @@ The objective is to fetch data from a provided API endpoint and replicate a give
 
 📁 Folder Structure
 
-```
 task-project/
 │
 ├── public/                      # Static assets
@@ -58,21 +57,10 @@ task-project/
 └── README.md
 ```
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-
 ```
 git clone https://github.com/Fahimraj12/Task-Demo.git
 cd Task-Demo
 ```
-
-2️⃣ Install Dependencies
-
-```
-npm install
-```
-
-3️⃣ Run the Development Server
 
 ```
 npm run dev
@@ -85,7 +73,6 @@ npm run dev
 - Endpoint: <insert provided API endpoint here>
 
 - Fetch the data using:
-
 ```
 useEffect(() => {
   fetch("<API_URL>")
@@ -99,8 +86,6 @@ useEffect(() => {
 
 ### Components Overview
 
--Component Description
-
 ```
 RestaurantCard.jsx	Displays restaurant name, image, rating, cuisine, and location
 MenuItem.jsx	Renders individual food items from API data
@@ -108,9 +93,6 @@ Filters.jsx	Handles filtering or sorting logic
 Cart.jsx	Manages cart items (if applicable)
 Home.jsx	Main page displaying fetched data and UI layout
 ```
-
-### 👨‍💻 Author
-
 - [Mo Fahim Raj](https://www.linkedin.com/in/mo-fahim-raj-175b9b304/)
 - 📧 [mofahimraj@gmail.com]
 - 🔗 [GitHub Profile](https://github.com/Fahimraj12)
