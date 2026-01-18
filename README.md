@@ -1,16 +1,116 @@
-# React + Vite
+# React API Data Fetch & UI Replication Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Project Overview
 
-Currently, two official plugins are available:
+This project is a React-based web application built as part of a company assignment.
+The objective is to fetch data from a provided API endpoint and replicate a given reference UI layout using React and Tailwind CSS (or any other modern styling approach).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Task Requirements
 
-## React Compiler
+- Fetch and parse data from the provided API endpoint.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Display the fetched data by replicating the layout and design from the given reference UI.
 
-## Expanding the ESLint configuration
+- Maintain a clean, modular folder structure with reusable components.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Ensure the page is responsive and visually matches the provided design.
+
+### View Demo
+
+- https://timely-taiyaki-92115f.netlify.app/
+
+🧩 Tech Stack
+
+- React (Vite) – Frontend framework
+
+-Tailwind CSS – Styling and responsiveness
+
+- Fetch / Axios – API data fetching
+
+- JavaScript (ES6+) – Logic and interactivity
+
+📁 Folder Structure
+
+```
+task-project/
+│
+├── public/                      # Static assets
+├── src/
+│   ├── assets/                  # Images, icons, etc.
+│   ├── Components/              # Reusable components
+│   │   ├── Cart.jsx
+│   │   ├── Filters.jsx
+│   │   ├── MenuItem.jsx
+│   │   └── RestaurantCard.jsx
+│   ├── pages/                   # Page-level components
+│   │   └── Home.jsx
+│   ├── App.jsx                  # Root component
+│   ├── main.jsx                 # Entry point
+│   ├── App.css                  # Global CSS
+│   ├── index.css                # Tailwind setup
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+
+```
+git clone https://github.com/Fahimraj12/Task-Demo.git
+cd Task-Demo
+```
+
+2️⃣ Install Dependencies
+
+```
+npm install
+```
+
+3️⃣ Run the Development Server
+
+```
+npm run dev
+```
+
+- Now open http://localhost:5173/ in your browser.
+
+🌐 API Integration
+
+- Endpoint: <insert provided API endpoint here>
+
+- Fetch the data using:
+
+```
+useEffect(() => {
+  fetch("<API_URL>")
+    .then(res => res.json())
+    .then(data => setData(data))
+    .catch(err => console.error("Error fetching data:", err));
+}, []);
+```
+
+- Render the fetched results dynamically using reusable components.
+
+### Components Overview
+
+-Component Description
+
+```
+RestaurantCard.jsx	Displays restaurant name, image, rating, cuisine, and location
+MenuItem.jsx	Renders individual food items from API data
+Filters.jsx	Handles filtering or sorting logic
+Cart.jsx	Manages cart items (if applicable)
+Home.jsx	Main page displaying fetched data and UI layout
+```
+
+### 👨‍💻 Author
+
+- [Mo Fahim Raj](https://www.linkedin.com/in/mo-fahim-raj-175b9b304/)
+- 📧 [mofahimraj@gmail.com]
+- 🔗 [GitHub Profile](https://github.com/Fahimraj12)
