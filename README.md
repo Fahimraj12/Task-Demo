@@ -100,3 +100,8 @@ Home.jsx	Main page displaying fetched data and UI layout
 ## Second Update
 Second PR for Pull Shark achievement
 
+
+## YOLO
+Direct commit to main branch
+
+
